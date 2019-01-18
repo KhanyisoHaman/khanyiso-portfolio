@@ -1,0 +1,743 @@
+/* HTML */
+html {
+    height: 0;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+ body {
+     margin: 0;
+ }
+
+/* Nav Bar */
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(180, 217, 234, 0.69);
+    position: fixed;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-right: 25px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 15px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+/* Hover */
+
+nav ul li a:hover {
+    background-color: #f92b2b;
+    /* #f7f304 */
+    color: white;
+    border-radius: 10px;
+}
+    
+
+
+/* Header */
+#Home {
+    background: linear-gradient(rgba(16, 14, 14, 0.39) , rgba(134, 128, 128, 0.28)), url(../images/display.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-state {
+    padding-top: 50vh;
+    padding-left: 0px;
+    text-align: center;
+    letter-spacing: 15px;
+    text-shadow: 5px 5px 5px black;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Main */
+
+
+/* About */
+#Abt {
+    width: 100%;
+    height: 100vh;
+    background-color: #dccacab5;
+    font-family: Dancing Script,sans-serif;
+    box-shadow: 5px 5px 5px;
+}
+
+.paragraph {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 30vh;
+    width: 50%;
+    font-size: 30px;
+    padding-left: 350px;
+}
+
+/* Education */
+#Edu {
+    width: 100%;
+    height: 100vh;
+    background-color: #d8d8d8b5;
+    box-shadow: 5px 5px 5px;
+}
+
+.edu {
+    text-align: center;
+    font-size: 22px;
+    line-height: 10px;
+    padding-top: 8vh;
+}
+
+.edu img {
+    border-radius: 40px;
+}
+
+
+
+/* Skills */
+#Skill {
+    width: 100%;
+    height: 100vh;
+    background-color: #d8d8d8b5;
+    box-shadow: 5px 5px 5px;
+}
+
+.skill {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 8vh;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    transition: width 1s ease-out, height 1s ease-out;
+}
+
+.logo:hover {
+    width: 120px;
+    height: 120px;
+    transition: width 2s ease-out, height 2s ease-out;
+}
+
+.responsive-img {
+    width: 250px;
+    height: 150px;
+    border-radius: 50px;
+    transition: width 2s ease-out, height 2s ease-out;
+}
+
+.responsive-img:hover {
+    width: 280px;
+    height: 180px;
+    border-radius: 50px;
+    transition: width 2s ease-out, height 2s ease-out;
+}
+
+
+/* Accomplishments */
+#Awards {
+    width: 100%;
+    height: 100vh;
+    background-color: #d8d8d8b5;
+    text-align: center;
+    padding-top: 10vh;
+    box-shadow: 5px 5px 5px;
+}
+
+.awards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  .awards-grids {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+/* Projects */
+#Projects {
+    width: 100%;
+    height: 100vh;
+    background-color: #d8d8d8b5;
+    text-align: center;
+    padding-top: 10vh;
+    box-shadow: 5px 5px 5px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 40px;
+  }
+  .project-grid {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+  }
+
+
+/* Contact Details */
+#Con {
+    width: 100%;
+    height: 60vh;
+    background-color: #d8d8d8b5;
+    text-align: center;
+    padding-top: 3vh;
+    box-shadow: 5px 5px 5px;
+}
+
+.con img {
+    border-radius: 30%;
+}
+
+.icon:hover {
+        transform: rotateY(720deg);
+        transition: transform 4s ease-out;
+}
+
+/* ---------------------------------------------------- */
+
+/* Responsive Design */
+/* For Tablet */
+
+@media only screen and (max-width: 990px) {
+    /* HTML */
+html {
+    height: 0;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+ body {
+     margin: 0;
+ }
+
+ .wrapper {
+     display: grid;
+     width: 100%;
+ }
+
+/* Nav Bar */
+nav {
+    /* width: 100%; */
+    height: 500px;
+    background-color: rgba(40, 255, 33, 0);
+    /* position: fixed; */
+}
+
+nav ul {
+    list-style-type: none;
+    padding-right: 5px;
+    width: 20%;
+    padding-left: 5px;
+    /* transform: translateX(16em); */
+}
+
+nav ul li {
+    display: flex;
+    background-color: #ffffff80;
+    margin: 10px 10px 10px 10px;
+    width: 190px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 15px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+/* Hover */
+
+nav ul li a:hover {
+    background-color: #f70410;
+    /* #f7f304 */
+    color: white;
+    border-radius: 10px;
+}
+    
+
+
+/* Header */
+#Home {
+    background-image: url(../images/display.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Main */
+
+
+/* About */
+#Abt {
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.paragraph {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 20vh;
+    width: 50%;
+    font-size: 28px;
+    padding-left: 250px;
+}
+
+/* Education */
+#Edu {
+    width: 100%;
+    height: 100vh;
+    background-color: #a8ff7f;
+    
+}
+
+.edu {
+    text-align: center;
+    font-size: 18px;
+    line-height: 10px;
+    padding-top: 2vh;
+    padding-left: 90px;
+}
+
+.edu img {
+    border-radius: 40px;
+}
+
+
+
+/* Skills */
+#Skill {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(253, 168, 221, 0.979);
+}
+
+#Skill h1 {
+    margin-top: 0;
+}
+
+.skill {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 2px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    transition: width 1s ease-out, height 1s ease-out;
+}
+
+.logo:hover {
+    width: 120px;
+    height: 120px;
+    transition: width 2s ease-out, height 2s ease-out;
+}
+
+.responsive-img {
+    width: 250px;
+    height: 150px;
+    border-radius: 50px;
+    transition: width 2s ease-out, height 2s ease-out;
+}
+
+.responsive-img:hover {
+    width: 280px;
+    height: 180px;
+    border-radius: 50px;
+    transition: width 2s ease-out, height 2s ease-out;
+}
+
+
+/* Accomplishments */
+#Awards {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(113, 218, 110);
+    text-align: center;
+    padding-top: 2vh;
+}
+
+
+.awards {
+    display: grid;
+    grid-template-columns: auto  auto auto;
+    padding: 10px;
+    width: 70vh;
+    margin-left: 45vh;
+  }
+  .awards-grid {
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+  }
+
+  .awards-grid img {
+      width: 150px;
+      height: 150px;
+  }
+
+
+/* Projects */
+#Projects {
+    width: 100%;
+    height: 100vh;
+    background-color: darksalmon;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    width: 700px;
+    padding-left: 40vh;
+  }
+  .project-grid {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    width: 200px;
+    height: 113px;
+  }
+
+
+/* Contact Details */
+#Con {
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(121, 248, 82);
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.con img {
+    border-radius: 30%;
+}
+
+.icon:hover {
+        transform: rotateY(720deg);
+        transition: transform 4s ease-out;
+}
+
+}
+
+/* ---------------------------------------------------- */
+
+/* For Mobile */
+
+@media only screen and (max-width: 700px) and (min-width: 300px) {
+    /* HTML */
+html {
+    height: 0;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+ body {
+     margin: 0;
+ }
+
+ .wrapper {
+     display: grid;
+     width: 100%;
+ }
+
+/* Nav Bar */
+nav {
+    width: 100%;
+    height: 0px;
+    background-color: rgba(40, 255, 33, 0);
+    position: fixed;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-right: 5px;
+    width: 20%;
+    padding-left: 5px;
+    /* transform: translateX(16em); */
+}
+
+nav ul li {
+    display: flex;
+    background-color: #ffffff80;
+    /* margin: 10px 10px 10px 10px; */
+    width: 170px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    padding: 1px;
+    margin: 10px;
+    text-transform: uppercase
+}
+
+/* Hover */
+
+nav ul li a:hover {
+    background-color: #f70410;
+    /* #f7f304 */
+    color: white;
+    border-radius: 10px;
+}
+    
+
+
+/* Header */
+#Home {
+    background-image: url(../images/display.jpg);
+    width: 100%;
+    height: 180vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-state {
+    padding-top: 50vh;
+    padding-left: 0px;
+    text-align: center;
+    letter-spacing: 15px;
+    text-shadow: 5px 5px 5px black;
+    color: white;
+    text-transform: uppercase;
+    font-size: x-small;
+}
+
+
+/* Main */
+
+
+/* About */
+#Abt {
+    width: 100%;
+    height: 170vh;
+    background-color: #dccacab5;
+    font-family: Dancing Script,sans-serif;
+    box-shadow: 5px 5px 5px;
+}
+
+.paragraph {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 50vh;
+    width: 50%;
+    font-size: 20px;
+    padding-left: 250px;
+}
+
+/* Education */
+#Edu {
+    width: 100%;
+    height: 170vh;
+    background-color: #d8d8d8b5;
+    box-shadow: 5px 5px 5px;
+}
+
+.edu {
+    text-align: center;
+    font-size: 20px;
+    line-height: 10px;
+    padding-top: 2vh;
+    padding-left: 170px;
+}
+
+.edu img {
+    border-radius: 40px;
+    width: 0px;
+    height: 0px;
+}
+
+
+
+/* Skills */
+#Skill {
+    width: 100%;
+    height: 170vh;
+    background-color: #d8d8d8b5;
+    box-shadow: 5px 5px 5px;
+}
+
+#Skill h1 {
+    margin: 0;
+}
+
+.skill {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 2px;
+}
+
+.image {
+    width: 0px;
+    height: 0px;
+}
+
+.html-img {
+    width: 100px;
+    height: 100px;
+}
+
+.css-img {
+    width: 80px;
+    height: 100px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    transition: width 1s ease-out, height 1s ease-out;
+}
+
+.logo:hover {
+    width: 120px;
+    height: 120px;
+    transition: width 2s ease-out, height 2s ease-out;
+}
+
+.responsive-img {
+    width: 250px;
+    height: 150px;
+    border-radius: 25px;
+    transition: width 2s ease-out, height 2s ease-out;
+}
+
+.responsive-img:hover {
+    width: 280px;
+    height: 180px;
+    border-radius: 50px;
+    transition: width 2s ease-out, height 2s ease-out;
+}
+
+
+/* Accomplishments */
+#Awards {
+    width: 100%;
+    height: 170vh;
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 15px;
+    background-color: #d8d8d8b5;
+    box-shadow: 5px 5px 5px;
+}
+
+#Awards h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.awards {
+    display: grid;
+    grid-template-columns: auto  auto auto;
+    padding: 10px;
+    width: 140vh;
+    margin-left: 70vh;
+  }
+  .awards-grid {
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+  }
+
+  .awards-grid img {
+      width: 150px;
+      height: 150px;
+  }
+
+
+/* Projects */
+#Projects {
+    width: 100%;
+    height: 190vh;
+    background-color: #d8d8d8b5;
+    box-shadow: 5px 5px 5px;
+    text-align: center;
+    padding-top: 0vh;
+}
+
+
+.project {
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding: 10px;
+    width: 700px;
+    padding-left: 58vh;
+  }
+  .project-grid {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 10px;
+    text-align: center;
+    width: 200px;
+    height: 113px;
+  }
+
+  .project-grid img {
+      width: 200px;
+      height: 113px;
+  }
+
+
+
+/* Contact Details */
+#Con {
+    width: 100%;
+    height: 100vh;
+    background-color: #d8d8d8b5;
+    box-shadow: 5px 5px 5px;
+    text-align: center;
+    padding-top: 3vh;
+}
+
+.my-pic {
+    border-radius: 15%;
+    width: 150px;
+    height: 150px;;
+}
+
+.icon-image img {
+    width: 20px;
+    height: 20px;
+}
+
+.icon:hover {
+        transform: rotateY(720deg);
+        transition: transform 4s ease-out;
+}
+
+}
