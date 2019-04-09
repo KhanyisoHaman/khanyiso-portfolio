@@ -1,0 +1,51 @@
+
+
+.about-me {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+    margin: 30px 45vh;
+}
+
+.education {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 20vh;
+    margin: 10vh 45vh;
+}
+
+.skills {
+    margin: 10vh 45vh;
+
+    h3, p {
+        text-align: center;
+    }
+
+    .code-icons {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+        margin: 10px 20vh;
+    }
+
+    a {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .node {
+        grid-column: span 2;
+        text-align: center;
+    }
+}
+
+.accomplishments {
+    margin: 30px 45vh;
+
+    .sic {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
