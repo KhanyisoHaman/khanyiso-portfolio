@@ -1,0 +1,48 @@
+// MY Tags
+
+body {
+    font-family: 'Saira Extra Condensed';
+    margin: 0;
+}
+
+header {
+    background-image: url(../images/display.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    ul {
+        padding-top: 7px;
+        padding-right: 10px;
+        margin: 0;
+        text-align: right;
+        padding-left: 0;
+    }
+
+    li {
+        list-style: none;
+        display: inline;
+        padding: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        // color: #335eeb;
+        font-size: 19px;
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+    }
+
+    .home {
+        margin-left: 97vh;
+    }
+
+    .logo {
+        transform: translate(-18%);
+    }
+}

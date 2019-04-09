@@ -1,0 +1,72 @@
+// Responsive Design
+
+// Tablet Size between 790px to 600px
+@media (max-width: 790px) and (min-width: 600px) {
+
+    nav {
+        height: 50px;
+    
+        li {
+            padding: 5px;
+        }
+    
+        a {
+            font-size: 17px;
+            letter-spacing: .5px;
+        }
+    
+        .home {
+            margin-left: 33vh;
+        }
+
+    }
+
+    .hero {
+        margin-right: 73vh;
+    }
+
+    .arrow-down {
+        transform: translate(57vh,6vh);
+    }
+
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+
+@media (max-width: 500px) and (min-width: 200px) {
+
+
+    nav {
+        height: 50vh;
+        position: absolute;
+        width: 100%;
+        transform: translateY(-40%);
+
+        .logo {
+            display: inline;
+            margin-left: 20vh;
+        }
+
+        ul {
+            text-align: left;
+        }
+    
+        li {
+            padding: 5px;
+            display: block
+        }
+    
+        a {
+            font-size: 17px;
+            letter-spacing: .5px;
+        }
+    
+        .home {
+            margin-left: 0;
+        }
+
+        
+
+    }
+
+}
