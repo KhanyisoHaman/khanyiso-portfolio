@@ -87,7 +87,27 @@ h3, h4, h5, h6 {
     margin-bottom: 10px !important;
 }
 
-iframe {
-    grid-column: span 3;
-    margin: auto;
+
+
+
+footer {
+    // height: 50vh;
+    background-image: url(../images/wolf-1341881_1920.jpg);
+    background-size: cover;
+
+    .footer {
+        height: 50px;
+        background-color: white;
+    }
+
+    .footer-h1 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        text-align: right;
+        color: white;  
+    }
 }

@@ -89,9 +89,22 @@ h3, h4, h5, h6 {
   margin-bottom: 10px !important;
 }
 
-iframe {
-  grid-column: span 3;
-  margin: auto;
+footer {
+  background-image: url(../images/wolf-1341881_1920.jpg);
+  background-size: cover;
+}
+footer .footer {
+  height: 50px;
+  background-color: white;
+}
+footer .footer-h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+footer h3 {
+  text-transform: uppercase;
+  text-align: right;
+  color: white;
 }
 
 .about-me {
@@ -312,6 +325,31 @@ iframe {
 
 .lorem:hover {
   opacity: 1;
+}
+
+.icons {
+  text-align: center;
+  background-color: #74adc8;
+}
+.icons .icon-item {
+  margin: 10px;
+  border-radius: 50%;
+}
+.icons a {
+  color: white;
+  font-size: 30px;
+}
+
+.footer p {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+}
+.footer hr {
+  margin: 0;
+  color: #0ca6ff;
+  height: 1px;
+  margin: auto 90vh;
 }
 
 #button {
