@@ -49,3 +49,18 @@
         grid-template-columns: repeat(2,1fr);
     }
 }
+
+.projects {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    margin: 30px 45vh;
+}
+
+.interests {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    margin: 30px 45vh;
+}
+

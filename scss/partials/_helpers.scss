@@ -9,11 +9,12 @@
         color: #ffff;
         text-shadow: 2px 2px 2px black;
         text-transform: uppercase;
-        font-size: 50px;
+        font-size: 50px !important;
     }
 
     p {
-        font-size: 20px;
+        font-size: 20px !important;
+        margin-top: 20px;
     }
 }
 
@@ -21,7 +22,7 @@
     position: absolute;
     transform: translate(45vh, 13vh);
     color: #000000fc;
-    font-size: 50px;
+    font-size: 50px !important;
     text-shadow: 2px 2px 2px #74adc8;
 }
 
@@ -63,4 +64,116 @@
         width: 300px;
         height: 200px;
     }
+}
+
+.project {
+    text-align: center;
+}
+
+.project-h1 {
+    grid-column: span 2;
+    text-align: center;
+    border-bottom: 1px solid rgb(12, 166, 255);
+}
+
+.project-item {
+    background-color: darkgray;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+.ipsum {
+    position: absolute;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0ca6ffe3;
+
+    p {
+        position: absolute;
+        top: -6rem;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-transform: uppercase;
+        color: white;
+        transition: all 0.5s ease-in-out 0.2s;
+        opacity: 0;
+    }
+
+
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+.project-item:hover .ipsum {
+    opacity: 1;
+    height: 100%;
+}
+
+
+.project-item:hover .ipsum p {
+    top: 50%;
+    opacity: 1;
+}
+
+.interest-h1 {
+    grid-column: span 3;
+    text-align: center;
+    border-bottom: 1px solid rgb(12, 166, 255);
+}
+
+.interest-item {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    margin: auto;
+    position: relative;
+
+    
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    video {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+
+.lorem {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0ca6ffe3;
+    
+    p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.lorem:hover  {
+   opacity: 1; 
 }

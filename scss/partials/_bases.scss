@@ -14,6 +14,10 @@ body {
     /* background-color: #fff; */
 }
 
+p {
+    font-size: 17px !important;
+}
+
 header {
     background-image: url(../images/display.jpg);
     background-size: cover;
@@ -81,4 +85,9 @@ h4 {
 h3, h4, h5, h6 {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
+}
+
+iframe {
+    grid-column: span 3;
+    margin: auto;
 }

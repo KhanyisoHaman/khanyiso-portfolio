@@ -22,6 +22,10 @@ body {
   /* background-color: #fff; */
 }
 
+p {
+  font-size: 17px !important;
+}
+
 header {
   background-image: url(../images/display.jpg);
   background-size: cover;
@@ -85,6 +89,11 @@ h3, h4, h5, h6 {
   margin-bottom: 10px !important;
 }
 
+iframe {
+  grid-column: span 3;
+  margin: auto;
+}
+
 .about-me {
   display: grid;
   grid-gap: 30px;
@@ -130,6 +139,20 @@ h3, h4, h5, h6 {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.projects {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 30px 45vh;
+}
+
+.interests {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 30px 45vh;
+}
+
 .hero {
   margin-top: 20vh;
   margin-right: 115vh;
@@ -139,17 +162,18 @@ h3, h4, h5, h6 {
   color: #ffff;
   text-shadow: 2px 2px 2px black;
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 50px !important;
 }
 .hero p {
-  font-size: 20px;
+  font-size: 20px !important;
+  margin-top: 20px;
 }
 
 .arrow-down {
   position: absolute;
   transform: translate(45vh, 13vh);
   color: #000000fc;
-  font-size: 50px;
+  font-size: 50px !important;
   text-shadow: 2px 2px 2px #74adc8;
 }
 
@@ -188,6 +212,106 @@ h3, h4, h5, h6 {
 .accomplishments img {
   width: 300px;
   height: 200px;
+}
+
+.project {
+  text-align: center;
+}
+
+.project-h1 {
+  grid-column: span 2;
+  text-align: center;
+  border-bottom: 1px solid #0ca6ff;
+}
+
+.project-item {
+  background-color: darkgray;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.project-item img {
+  width: 300px;
+  height: 200px;
+}
+
+.ipsum {
+  position: absolute;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0ca6ffe3;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+.ipsum p {
+  position: absolute;
+  top: -6rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  color: white;
+  transition: all 0.5s ease-in-out 0.2s;
+  opacity: 0;
+}
+
+.project-item:hover .ipsum {
+  opacity: 1;
+  height: 100%;
+}
+
+.project-item:hover .ipsum p {
+  top: 50%;
+  opacity: 1;
+}
+
+.interest-h1 {
+  grid-column: span 3;
+  text-align: center;
+  border-bottom: 1px solid #0ca6ff;
+}
+
+.interest-item {
+  width: 200px;
+  height: 200px;
+  background-color: lightgray;
+  margin: auto;
+  position: relative;
+}
+.interest-item img {
+  width: 200px;
+  height: 200px;
+}
+.interest-item video {
+  width: 200px;
+  height: 200px;
+}
+
+.lorem {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0ca6ffe3;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.lorem p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.lorem:hover {
+  opacity: 1;
 }
 
 #button {
