@@ -224,6 +224,7 @@ footer h3 {
 .accom-h1 {
   text-align: center;
   border-bottom: 1px solid #0ca6ff;
+  text-transform: uppercase;
 }
 
 .accomplishments img {
@@ -231,8 +232,11 @@ footer h3 {
   height: 200px;
 }
 
-.project {
+.projects {
   text-align: center;
+}
+.projects h1 {
+  text-transform: uppercase;
 }
 
 .project-h1 {
@@ -492,6 +496,10 @@ footer h3 {
   .interests {
     margin: 30px 15vh;
   }
+
+  .row {
+    margin: 10px 142px !important;
+  }
 }
 @media (max-width: 500px) and (min-width: 200px) {
   nav .logo {
@@ -620,6 +628,18 @@ footer h3 {
     position: absolute;
     transform: translate(-6%, -225%);
     transition: all 0.5s ease-in-out;
+  }
+
+  #button {
+    background-color: #007bff;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 10px 15px;
+    top: 460px;
+  }
+
+  .row {
+    margin: 10px 0px !important;
   }
 }
 

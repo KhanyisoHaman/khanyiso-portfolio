@@ -87,6 +87,10 @@
         margin: 30px 15vh;
     }
 
+    .row {
+        margin: 10px 142px !important;
+    }
+
 }
 
 // ---------------------------------------------------------------------------------------------------------------------
@@ -241,6 +245,18 @@
         position: absolute;
         transform: translate(-6%, -225%);
         transition: all 0.5s ease-in-out;
+    }
+
+    #button {
+        background-color: #007bff;
+        border-radius: 50%;
+        font-size: 20px;
+        padding: 10px 15px;
+        top: 460px;
+    }
+
+    .row {
+        margin: 10px 0px !important;
     }
 
 }
