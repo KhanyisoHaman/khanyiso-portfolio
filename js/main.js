@@ -10,3 +10,9 @@ $(window).scroll(function() {
     btn.removeClass('show');
   }
 });
+
+
+// Toggle Button
+function toggleNavigation() {
+  document.getElementById("toggleNav").classList.toggle('active');
+}

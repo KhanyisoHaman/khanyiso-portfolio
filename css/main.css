@@ -415,7 +415,17 @@ footer h3 {
   padding: 10px 15px;
 }
 
+#toggleNav.active {
+  display: initial;
+}
+
 @media (max-width: 790px) and (min-width: 600px) {
+  header {
+    background: linear-gradient(#63616171, #0fb1da62), url(../images/display.jpg);
+    background-size: cover;
+    height: 100vh;
+  }
+
   nav {
     height: 50px;
   }
@@ -435,26 +445,64 @@ footer h3 {
   }
 
   .arrow-down {
-    transform: translate(57vh, 6vh);
+    transform: translate(715%, 199%);
+  }
+
+  #toggleNav {
+    display: none !important;
+  }
+
+  #toggleNav.active {
+    display: initial !important;
+  }
+
+  .toggle {
+    display: initial !important;
+  }
+
+  .about-me {
+    margin: 30px 15vh;
+  }
+  .about-me .about-text {
+    margin: 20px 0;
+  }
+
+  .education {
+    margin: 30px 15vh;
+  }
+  .education h1 {
+    grid-column: span 4;
+  }
+
+  .skills {
+    margin: 30px 15vh;
+  }
+  .skills .code-icons {
+    margin: 10px 0vh;
+  }
+
+  .accomplishments {
+    margin: 30px 15vh;
+  }
+
+  .projects {
+    margin: 30px 15vh;
+  }
+
+  .interests {
+    margin: 30px 15vh;
   }
 }
 @media (max-width: 500px) and (min-width: 200px) {
-  nav {
-    height: 50vh;
-    position: absolute;
-    width: 100%;
-    transform: translateY(-40%);
-  }
   nav .logo {
     display: inline;
-    margin-left: 20vh;
+    margin-left: 1vh;
   }
   nav ul {
     text-align: left;
   }
   nav li {
     padding: 5px;
-    display: block;
   }
   nav a {
     font-size: 17px;
@@ -462,6 +510,116 @@ footer h3 {
   }
   nav .home {
     margin-left: 0;
+  }
+
+  .hero {
+    margin-top: 25vh;
+    margin-right: 5vh;
+    margin-left: 5vh;
+  }
+  .hero h1 {
+    font-size: 35px !important;
+  }
+  .hero p {
+    font-size: 18px !important;
+  }
+
+  .arrow-down {
+    transform: translate(3.5rem, 3rem);
+  }
+
+  #toggleNav {
+    display: none !important;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    width: 100%;
+    transform: translate(-36%, 13%);
+  }
+  #toggleNav li {
+    display: block;
+  }
+
+  #toggleNav.active {
+    display: initial !important;
+  }
+
+  .toggle {
+    display: initial !important;
+  }
+
+  .about-me {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-me .about-text {
+    margin: 20px 0;
+  }
+  .about-me .about-h1 {
+    grid-column: auto;
+  }
+
+  .education {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .education h1 {
+    grid-column: auto;
+  }
+
+  .skills {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills .code-icons {
+    margin: 10px 0vh;
+  }
+
+  .accomplishments {
+    margin: 10px;
+  }
+  .accomplishments .sic {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projects {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projects h1 {
+    grid-column: auto;
+  }
+
+  .interests {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .interests h1 {
+    grid-column: auto;
+  }
+
+  .footer-h1 {
+    display: none;
+  }
+
+  footer h3 {
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+  }
+
+  .download {
+    padding: 10px;
+    background-color: #00bbff;
+    margin: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    transform: translate(-6%, -225%);
+    transition: all 0.5s ease-in-out;
   }
 }
 
