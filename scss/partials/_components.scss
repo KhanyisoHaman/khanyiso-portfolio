@@ -2,14 +2,56 @@
 
 #button {
     transition: background-color .5s, visibility .7s, opacity .7s;
-    background-color: #a88d7b;
-    border-radius: 5px;
+    background-color: #007bff;
+    border-radius: 50%;
     text-align: center;
     visibility: hidden;
     position: fixed;
-    padding: 15px;
+    font-size: 25px;
+    padding: 10px 17px;
     z-index: 500;
     right: 25px;
     opacity: 0;
     top: 530px;
+    color: white;
+}
+
+#button.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.download {
+    padding: 10px;
+    background-color: #00bbff;
+    margin: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    transform: translate(20%,-105%);
+    transition: all .5s ease-in-out;
+}
+
+.download:hover {
+    text-decoration: none;
+}
+
+.bootstrap {
+    text-align: center;
+    margin-bottom: 0 !important;
+}
+
+.row {
+    margin: 10px 200px !important;
+}
+
+.toggle {
+    display: none;
+    z-index: 1000;
+    font-size: 20px;
+    color: gray;
+    padding: 10px 15px;
 }

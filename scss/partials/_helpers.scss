@@ -20,8 +20,8 @@
 
 .arrow-down {
     position: absolute;
-    transform: translate(45vh, 13vh);
-    color: #000000fc;
+    transform: translate(1278%, 411%);
+    color: white;
     font-size: 50px !important;
     text-shadow: 2px 2px 2px #74adc8;
 }
@@ -190,6 +190,10 @@
     a {
         color: white;
         font-size: 30px;
+    }
+
+    a:hover {
+        text-decoration: none !important;
     }
 }
 

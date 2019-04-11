@@ -10,8 +10,8 @@
 
     <!-- Link My JQUERY -->
     <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
     crossorigin="anonymous"></script>
 
     <!-- Link Font Awesome Icons -->
@@ -32,13 +32,20 @@
             <nav>
                 <ul>
                     <li class="logo"><a href="#">Khanyiso Haman</a></li>
-                    <li class="home" ><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Accomplishments</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <span id="toggleNav">
+                        <li class="home" ><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#accomplishments">Accomplishments</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </span>
+                    <li class="toggle">
+                        <span class="toggle" onclick="toggleNavigation()">
+                            <i class="fa fa-bars"></i>
+                        </span>
+                    </li>
                 </ul>
             </nav>
             <!-- NAV BAR ENDS -->
@@ -63,7 +70,7 @@
         <!-- Back To Top Button  -->
         <a id="button" class="back-top-btn" href="#"><i class="fas fa-chevron-up"></i></a>
 
-        <section class="about-me">
+        <section id="about" class="about-me">
             <h1 class="about-h1" >ABOUT ME</h1>
 
             <article class="about-image"></article>
@@ -75,7 +82,7 @@
             </article>
         </section>
 
-        <section class="education">
+        <section id="education" class="education">
             <h1 class="edu-h1">EDUCATION</h1>
             <article class="edu-item">
                 <h3 class = "h3">Action Volunteers Africa</h3>
@@ -105,7 +112,7 @@
             </article>
         </section>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <h1 class="skills-h1">SKILLS & COMPETENCIES</h1>
 
             <h3 class = "h3">Lorem</h3>
@@ -127,7 +134,7 @@
             </article>
         </section>
 
-        <section class="accomplishments">
+        <section id="accomplishments" class="accomplishments">
             <h1 class="accom-h1">Accomplishments</h1>
 
             <article class="sic">
@@ -157,7 +164,7 @@
             </article>
         </section>
 
-        <section class="projects">
+        <section id="projects" class="projects">
             <h1 class="project-h1">Projects</h1>
             <article class="outdoor project-item"> <img src="images/projects/outdoor.PNG" alt=""> <div class="ipsum"><p>Outdoor Adventures</p></div></article>
             <article class="vr-game project-item"> <img src="images/projects/vrgame.PNG" alt=""> <div class="ipsum"><p>Virtual Reality Game</p></div></article>
@@ -187,16 +194,46 @@
 
         </section>
 
-        <footer>
-            <h1 class="footer-h1">This is my Footer</h1>
+        <footer id="contact">
+            <h1 class="footer-h1">Dr West, Legend of Legends [L.O.L]</h1>
 
             <h3>Contact Khanyiso Haman</h3>
 
+            <a class="download" href="">DOWNLOAD CV</a>
+
+            <!-- BootStrap -->
+            <p class="bootstrap">
+                <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">EMAIL</a>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">NUMBER</button>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">EMAIL & NUMBER</button>
+              </p>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                        Send me a mail at <a href="mailto:khanyisohaman@gmail.com">khanyisohaman@gmail.com</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                        Send me a WhatsApp message at <a href="#">0640408449</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <!-- BootStrap -->
+
             <div class="icons">
-                <span class="icon-item"> <a href="#"><i class="fab fa-facebook-f"></i></a> </span>
-                <span class="icon-item"> <a href="#"><i class="fab fa-twitter"></i></a> </span>
-                <span class="icon-item"> <a href="#"><i class="fab fa-github"></i> </a></span>
-                <span class="icon-item"> <a href="#"><i class="fab fa-linkedin-in"></i></a> </span>
+                <span class="icon-item"> <a href="#"><i class="fab fa-facebook-square"></i> </a> </span>
+
+                <span class="icon-item"> <a href="#"><i class="fab fa-twitter-square"></i></a>  </span>
+
+                <span class="icon-item"> <a href="#"><i class="fab fa-github-square"></i> </a></span>
+
+                <span class="icon-item"> <a href="#"><i class="fab fa-linkedin"></i> </a> </span>
             </div>
             <article class="footer">
                  <p> Designed by Khanyiso Haman &copy; 2019 </p>
